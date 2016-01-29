@@ -17,8 +17,6 @@ MySQL:
   - mysql:/var/lib/mysql
   stdin_open: true
 PHPNginx:
-  labels:
-    io.rancher.sidekicks: Redis,MySQL,Mongo
   tty: true
   image: bridgeconx/ldock-phpnginx:develop
   volume_driver: ${VOLUME_DRIVER}
