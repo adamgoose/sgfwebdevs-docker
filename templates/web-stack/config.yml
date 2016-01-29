@@ -1,0 +1,5 @@
+name: Web Stack
+description: |
+  PHP 5.6, Nginx, MySQL 5.6, Redis 3, Mongo 3
+version: v1.0
+category: SGF Web Devs

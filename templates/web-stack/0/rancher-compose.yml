@@ -1,0 +1,32 @@
+.catalog:
+  name: "Web Stack"
+  version: "1.0"
+  description: "Web Stack with Convoy"
+  uuid: web-stack
+  questions:
+    - variable: "VOLUME_DRIVER"
+      description: "Name of the Storage Pool you'd like to use"
+      label: "Storage Pool"
+      required: true
+      default: "convoy"
+      type: "string"
+    - variable: "MYSQL_DATABASE"
+      description: "Name of MySQL Database to be created"
+      label: "Database Name"
+      required: true
+      default: "database"
+      type: "string"
+    - variable: "MYSQL_PASSWORD"
+      description: "MySQL Password (user is bcx)"
+      label: "Database Password"
+      required: true
+      default: ""
+      type: "password"
+Redis:
+  scale: 1
+MySQL:
+  scale: 1
+PHPNginx:
+  scale: 1
+Mongo:
+  scale: 1
