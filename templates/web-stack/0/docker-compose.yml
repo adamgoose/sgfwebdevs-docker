@@ -1,7 +1,7 @@
 Redis:
   tty: true
   image: redis:3
-  volume_driver: ${VOLUME_DRIVER}
+  volume_driver: '${VOLUME_DRIVER}'
   volumes:
   - redis:/data
   stdin_open: true
@@ -12,14 +12,14 @@ MySQL:
     MYSQL_USER: 'user'
   tty: true
   image: mysql:5.6
-  volume_driver: ${VOLUME_DRIVER}
+  volume_driver: '${VOLUME_DRIVER}'
   volumes:
   - mysql:/var/lib/mysql
   stdin_open: true
 PHPNginx:
   tty: true
   image: bridgeconx/ldock-phpnginx:develop
-  volume_driver: ${VOLUME_DRIVER}
+  volume_driver: '${VOLUME_DRIVER}'
   volumes:
   - sites-enabled:/etc/nginx/sites-enabled
   - www:/var/www
@@ -28,7 +28,7 @@ PHPNginx:
 Mongo:
   tty: true
   image: mongo:3
-  volume_driver: ${VOLUME_DRIVER}
+  volume_driver: '${VOLUME_DRIVER}'
   volumes:
   - mongo:/data/db
   stdin_open: true
