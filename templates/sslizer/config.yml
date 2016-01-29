@@ -1,0 +1,5 @@
+name: SSLizer
+description: |
+  Direct http requests to me, and I'll redirect to https!
+version: v1.0
+category: Network

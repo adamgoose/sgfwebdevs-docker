@@ -1,0 +1,6 @@
+SSLizer:
+  labels:
+    io.rancher.container.pull_image: always
+  tty: true
+  image: rounds/10m-nginx-redirect-to-ssl
+  stdin_open: true

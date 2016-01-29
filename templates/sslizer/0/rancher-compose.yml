@@ -1,0 +1,7 @@
+.catalog:
+  name: "SSLizer"
+  version: "1.0"
+  description: "Direct http requests to me, and I'll redirect to https!"
+  uuid: sslizer
+SSLizer:
+  scale: 1
